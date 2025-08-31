@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Akwaba Consulting</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Akwaba Consulting">
+                <span>Akwaba Consulting</span>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main>
+        <!-- Section Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contactez-nous</h1>
+                <p>Nous sommes à votre écoute pour répondre à toutes vos questions</p>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Prenez rendez-vous</h2>
+                        <p>Notre équipe est à votre disposition pour discuter de vos projets et vous proposer des solutions adaptées à vos besoins.</p>
+                        
+                        <div class="info-item">
+                            <h3><i class="fas fa-envelope"></i> Email</h3>
+                            <p>contact@akwabaconsulting.com</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3><i class="fas fa-phone"></i> Téléphone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
+                            <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h3><i class="fas fa-clock"></i> Horaires</h3>
+                            <p>Lundi - Vendredi: 9h - 18h<br>Samedi: 10h - 14h<br>Dimanche: Fermé</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Envoyez-nous un message</h2>
+                        
+                        <!-- Message de succès (caché par défaut) -->
+                        <div id="successMessage" class="success-message">
+                            <i class="fas fa-check-circle"></i> Votre message a été envoyé avec succès ! Nous vous répondrons rapidement.
+                        </div>
+                        
+                        <!-- Message d'erreur (caché par défaut) -->
+                        <div id="errorMessage" class="error-message">
+                            <i class="fas fa-exclamation-circle"></i> Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.
+                        </div>
+                        
+                        <!-- Utilisation de FormSubmit.co pour recevoir les emails -->
+                        <form id="contactForm" action="https://formsubmit.co/votre-email@exemple.com" method="POST">
+                            <!-- Configuration FormSubmit -->
+                            <input type="hidden" name="_subject" value="Nouveau message depuis le site Akwaba Consulting">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="merci.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service intéressé</label>
+                                <select id="service" name="service">
+                                    <option value="">Conseil Juridique & Conformité</option>
+                                    <option value="strategie">Recouvrement de Créances</option>
+                                    <option value="digital">Gestion Immobilière</option>
+                                    <option value="formation">Création & Développement d'Entreprise</option>
+                                    <option value="optimisation">Conseil Fiscal & Comptable</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <button type="submit" class="cta-button" id="submitButton">
+                                <span class="button-text">Envoyer le message</span>
+                                <span class="loading-spinner" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Envoi en cours...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Map -->
+        <section class="map">
+            <div class="container">
+                <h2>Nous trouver</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99144060821!2d2.292292615674389!3d48.85837007928741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe7dd9e6571%3A0x10dfc5e5a792e23!2sAvenue%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1678898439090!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ -->
+        <section class="faq">
+            <div class="container">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h3>Quel est le délai de réponse après envoi du formulaire ?</h3>
+                        <p>Nous nous engageons à répondre à toutes les demandes dans un délai maximum de 24 heures ouvrées.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Proposez-vous une première consultation gratuite ?</h3>
+                        <p>Oui, nous offrons une première consultation sans engagement pour discuter de vos besoins et voir comment nous pouvons vous aider.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Travaillez-vous avec des entreprises à l'international ?</h3>
+                        <p>Absolument. Nous avons des consultants qui parlent plusieurs langues et pouvons intervenir partout dans le monde, en présentiel ou à distance.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Quelles sont vos modalités de paiement ?</h3>
+                        <p>Nous proposons différentes modalités de paiement adaptées à chaque projet : forfait, régie, ou paiement échelonné.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Akwaba Consulting</h3>
+                    <p>Votre partenaire pour la réussite de vos projets en Côte d'Ivoire.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@akwabaconsulting.ci</p>
+                    <p>+225 27 22 50 00 00</p>
+                    <p>Plateau, Avenue Lamblin, Abidjan, Côte d'Ivoire</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Akwaba Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/navigation.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

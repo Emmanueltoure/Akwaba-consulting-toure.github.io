@@ -1,0 +1,132 @@
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(rgba(26, 58, 95, 0.8), rgba(26, 58, 95, 0.8)), url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.page-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+/* History Section */
+.history {
+    background-color: var(--white);
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.history-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+.history-image .placeholder-image {
+ background: url('../images/salle-d-audience-vide-avec-marteau.jpg') center/cover no-repeat;
+}
+
+/* Mission Section */
+.mission {
+    background-color: var(--light-bg);
+}
+
+.mission-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.mission-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.mission-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Team Section */
+.team {
+    background-color: var(--white);
+}
+
+.team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.team-member h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.position {
+    color: var(--secondary-dark);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* About CTA Section */
+.about-cta {
+    background: linear-gradient(rgba(26, 58, 95, 0.9), rgba(26, 58, 95, 0.9)), url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.about-cta h2 {
+    margin-bottom: 1.5rem;
+}
+
+.about-cta p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .history-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .history-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .mission-content {
+        grid-template-columns: 1fr;
+    }
+}

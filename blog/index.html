@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Cabinet Juridique Akwaba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="/images/Logo.png" alt="Cabinet Juridique Akwaba">
+                <span>Cabinet Akwaba</span>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../about.html">À propos</a></li>
+                    <li><a href="../services.html">Domaines d'expertise</a></li>
+                    <li><a href="index.html" class="active">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main>
+        <!-- Section Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Blog Juridique</h1>
+                <p>Actualités, analyses et conseils par nos experts en droit</p>
+            </div>
+        </section>
+
+        <!-- Section Blog -->
+        <section class="blog-listing">
+            <div class="container">
+                <div class="blog-filters">
+                    <h2>Catégories</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Tous les articles</button>
+                        <button class="filter-btn" data-filter="droit-affaires">Droit des affaires</button>
+                        <button class="filter-btn" data-filter="droit-famille">Droit de la famille</button>
+                        <button class="filter-btn" data-filter="droit-immobilier">Droit immobilier</button>
+                        <button class="filter-btn" data-filter="droit-penal">Droit pénal</button>
+                        <button class="filter-btn" data-filter="droit-social">Droit social</button>
+                    </div>
+                </div>
+
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="blog-card" data-category="droit-affaires">
+                        <div class="blog-card-image">
+                            <img src="/images/blog/homme-faisant-son-prochain-mouvement.jpg" alt="Droit des affaires">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Droit des affaires</span>
+                                <span class="blog-date">12 Mai 2023</span>
+                            </div>
+                            <h3><a href="article-droit-affaires.html">Nouvelles réglementations pour les sociétés commerciales en 2023</a></h3>
+                            <p>Découvrez les dernières modifications législatives impactant les entreprises et les adaptations nécessaires pour rester conforme.</p>
+                            <a href="article-droit-affaires.html" class="read-more">Lire la suite →</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card" data-category="droit-famille">
+                        <div class="blog-card-image">
+                            <img src="/images/blog/plan-moyen-parents-et-enfant.jpg" alt="Droit de la famille">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Droit de la famille</span>
+                                <span class="blog-date">28 Avril 2023</span>
+                            </div>
+                            <h3><a href="article-droit-famille.html">La réforme du divorce par consentement mutuel</a></h3>
+                            <p>Analyse des changements apportés par la réforme de 2023 et leurs implications pratiques pour les couples.</p>
+                            <a href="article-droit-famille.html" class="read-more">Lire la suite →</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card" data-category="droit-immobilier">
+                        <div class="blog-card-image">
+                            <img src="/images/blog/affaires-noir-expression-heureuse.jpg" alt="Droit immobilier">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Droit immobilier</span>
+                                <span class="blog-date">15 Avril 2023</span>
+                            </div>
+                            <h3><a href="article-droit-immobilier.html">L'encadrement des loyers : ce qui change en 2023</a></h3>
+                            <p>Point sur les nouvelles dispositions encadrant les loyers dans les zones tendues et leurs conséquences pour propriétaires et locataires.</p>
+                            <a href="article-droit-immobilier.html" class="read-more">Lire la suite →</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card" data-category="droit-penal">
+                        <div class="blog-card-image">
+                            <img src="/images/blog/gros-plan-menottes-livres.jpg" alt="Droit pénal">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Droit pénal</span>
+                                <span class="blog-date">3 Avril 2023</span>
+                            </div>
+                            <h3><a href="article-droit-penal.html">Cybercriminalité : nouvelles menaces et moyens de protection</a></h3>
+                            <p>Éclairage sur l'évolution de la cybercriminalité et les dispositifs légaux pour protéger les entreprises et particuliers.</p>
+                            <a href="article-droit-penal.html" class="read-more">Lire la suite →</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card" data-category="droit-social">
+                        <div class="blog-card-image">
+                            <img src="/images/blog/gros-plan-de-mains-empilees.jpg" alt="Droit social">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Droit social</span>
+                                <span class="blog-date">22 Mars 2023</span>
+                            </div>
+                            <h3><a href="article-droit-social.html">Télétravail : obligations de l'employeur et droits du salarié</a></h3>
+                            <p>Le point complet sur le cadre juridique du télétravail après les dernières modifications législatives.</p>
+                            <a href="article-droit-social.html" class="read-more">Lire la suite →</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card" data-category="droit-affaires">
+                        <div class="blog-card-image">
+                            <img src="/images/blog/la-nature-morte-de-la-journee-mondiale-de-la-propriete-intellectuelle.jpg" alt="Propriété intellectuelle">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Droit des affaires</span>
+                                <span class="blog-date">10 Mars 2023</span>
+                            </div>
+                            <h3><a href="article-propriete-intellectuelle.html">Protection des marques à l'ère du digital</a></h3>
+                            <p>Strategies pour protéger efficacement ses actifs immatériels dans un environnement digital en constante évolution.</p>
+                            <a href="article-propriete-intellectuelle.html" class="read-more">Lire la suite →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-btn disabled">← Précédent</a>
+                    <a href="#" class="page-btn active">1</a>
+                    <a href="#" class="page-btn">2</a>
+                    <a href="#" class="page-btn">3</a>
+                    <a href="#" class="page-btn">Suivant →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Restez informé</h2>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos dernières publications et actualités juridiques.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Votre adresse email" required>
+                        <button type="submit" class="cta-button">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Akwaba Consulting</h3>
+                    <p>Votre partenaire pour la réussite de vos projets en Côte d'Ivoire.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@akwabaconsulting.ci</p>
+                    <p>+225 27 22 50 00 00</p>
+                    <p>Plateau, Avenue Lamblin, Abidjan, Côte d'Ivoire</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Akwaba Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/navigation.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
